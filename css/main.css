@@ -1,0 +1,218 @@
+html,
+body {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(79, 79, 79);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(60, 60, 60);
+}
+
+svg {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+  }
+  
+  path {
+    stroke-dasharray: 100;
+    animation: draw 1s infinite ease;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dashoffset: 0;
+    }
+    100%{
+      stroke-dashoffset: 200;
+    }
+  }
+
+.main {
+    overflow: hidden;
+    background-image: url(../images/Moving/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#scene {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#scene div.layer {
+    height: 100vh;
+    width: 100%;
+    /* object-fit: cover;
+    position: absolute;
+    width: 110%;
+    left: -5%;
+    top: -5%; */
+}
+
+div.layer div {
+    height: 106%;
+    width: 106%;
+    left: -3%;
+    top: -3%;
+    position: absolute;
+}
+
+.image1 {
+    background-image: url(../images/Moving/moon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image2 {
+    background-image: url(../images/Moving/Stars-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image3 {
+    background-image: url(../images/Moving/stars-overlay.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image4 {
+    background-image: url(../images/Moving/planet.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image5 {
+    background-image: url(../images/Moving/city.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image6 {
+    background-image: url(../images/Moving/black-border.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image7 {
+    background-image: url(../images/Moving/cloud3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    animation: cloud3 150s linear infinite;
+    -webkit-animation: cloud3 150s linear infinite;
+}
+
+.image8 {
+    background-image: url(../images/Moving/cloud2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    animation: cloud2 80s linear infinite;
+    -webkit-animation: cloud2 80s linear infinite;
+}
+
+.image9 {
+    background-image: url(../images/Moving/cloud1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    animation: cloud1 100s linear infinite;
+    -webkit-animation: cloud1 100s linear infinite;
+}
+
+.image10 {
+    background-image: url(../images/Moving/pulz-logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@keyframes cloud3 {
+    0% {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+@keyframes cloud2 {
+    0% {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+@keyframes cloud1 {
+    0% {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
